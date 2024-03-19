@@ -5,9 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function displayInformation () {
+            // Your code goes here. 
+            // Do not change any other code in this file
+            // All of the steps below must be achieved using JavaScript!
+    
+            
+            // 1. Change the h1 element to your name.
+            document.querySelector("h1").innerHTML = "Tawseef Rahman's Homepage";
+            
+               
+            // 2. Update the three span elements using ONLY JavaScript
+                
+    
+            // 3. Change the background color and margin for the entire page.
+            document.querySelector("body").style.backgroundColor = "yellow";
+            document.querySelector("body").style.margin = "30px";
+                
+        }
+    
+        // 4. If someone uses the keyboard shortcut to copy the words "Thank you for visiting!" then add the words "Go Blue" to the final div.  
+        // Each occurrence should be on a separate line.  Don't use 
+        // paragraphs.
+        function copyFunction() {
+            document.getElementById("cheer").innerHTML = "<p>Go Blue!</p>"
+        }
+ 
+    
+                   
+    </script>
+
     <title>Home</title>
 </head>
-<body>
+<body onload="displayInformation ()">
     <a href = "#main" class = "skip">Skip to Main Content</a>
     <header>
         <nav>
