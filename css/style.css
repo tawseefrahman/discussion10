@@ -1,0 +1,122 @@
+body {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #808080;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #000000;
+}
+
+li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 20px;
+    font-family: "Century Gothic", sans-serif;
+}
+
+li a:hover {
+    background-color: #DCDCDC;
+}
+
+.active {
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    font-family: "Century Gothic, sans-serif";
+    font-size: 18px;
+}
+
+img {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+img:hover {
+    opacity: 1.0;
+}
+
+.petandphotogallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.recipeitem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.travelitem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    ul {
+        list-style-type: none;
+        margin: 5px;
+        padding: 5px;
+        width: 300px;
+    }
+    
+    li a {
+        display: block;
+        width: 300px;
+        padding: 10px 10px;
+    }
+}
